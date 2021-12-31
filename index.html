@@ -25,7 +25,7 @@
     </head>
     <body class="holy-souce">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light background-nav fixed-top" id="menu">
               <div class="container">
                 <div class="image-brand">
                     <object type="image/svg+xml" data="src/assets/images/logos/logo-holy-sauce.svg"></object>
@@ -70,33 +70,48 @@
                 </div>
             </section>
 
-            <section class="holy-souce-section">
-                <div class="holy-souce-section-heading-">
+            <section class="holy-souce-section container">
+                <div class="row holy-souce-section-heading-title">
                     <p>Tried and true since 1870</p>
                 </div>
-                <div class="holy-souce-section-heading-title">
-                    <h2><span>squeeze</span> things up</h2>
-                </div>
-                <div class="holy-souce-section-heading-link">
-                    <a href="">
-                        Shop our products >
-                    </a>
+                <div class="row holy-souce-section-heading d-flex align-items-end">
+                    <div class="holy-souce-section-heading-title col d-flex justify-content-start">
+                        <h2><span>squeeze</span><br> things up</h2>
+                    </div>
+                    <div class="holy-souce-section-heading-link col d-flex justify-content-end">
+                        <a href="">
+                            <p>Shop our products ></p>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="holy-souce-section-product">
-                    <div class="holy-souce-section-product-image">
-                        <img src="src/assets/images/products/chili-sauce.png" alt="Product Chili Sauce">
-                        <img src="src/assets/images/general/chili-souce-preview-a.png" alt="Product Chili Sauce">
-                        <img src="src/assets/images/general/chili-souce-preview-b.png" alt="Product Chili Sauce">
-                    </div>
-                    <div class="holy-souce-section-product-description">
-                        <p>Tried and true since 1870</p>
-                        <h3>There’s a spicy for <span>Chili Sauce</span></h3>
-                        <p>You can enjoy any of our products in any foods, but some are best served at specific flavour. Use our Holy to find out your taste.</p>
-                        <div class="holy-souce-section-product-button">
-                            <a href="">
-                                Squeez Chili Sauce
-                            </a>
+                    <!-- <div class="background-content"></div> -->
+                    <div class="row product-content">
+                        <div class="holy-souce-section-product-image col">
+                            <div class="product-image">
+                                <img src="src/assets/images/products/chili-sauce-small.png" alt="Product Chili Sauce">
+                            </div>
+                            <div class="product-image-preview">
+                                <img src="src/assets/images/general/chili-souce-preview-a.png" alt="Product Chili Sauce">
+                                <img src="src/assets/images/general/chili-souce-preview-b.png" alt="Product Chili Sauce">
+                            </div>
+                        </div>
+                        <div class="holy-souce-section-product-description col">
+                            <div class="product-description-min-title">
+                                <p>Tried and true since 1870</p>    
+                            </div>
+                            <div class="product-description-title">
+                                <h3>There’s a spicy for <br><span>Chili Sauce</span></h3>
+                            </div>
+                            <div class="product-description">
+                                <p>You can enjoy any of our products in any foods, <br> but some are best served at specific flavour. Use <br> our Holy to find out your taste.</p>
+                            </div>
+                            <div class="holy-souce-section-product-button">
+                                <a href="">
+                                    <p>Squeez Chili Sauce</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -308,8 +323,24 @@
             </div>
         </footer>
 
+        <!-- CDN Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
         <!-- CDN Script Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+        <script>
+            $(window).scroll(function() {
+                if ($("#menu").offset().top > 56) {
+                    $("#menu").addClass("color-nav");
+                }else {
+                    $("#menu").removeClass("color-nav");
+                }
+            });
+         
+        </script>   
+
     </body>
 </html>

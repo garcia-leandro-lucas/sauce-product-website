@@ -1,20 +1,10 @@
-/*  Inicio de fuentes externas  */
+/*  Starting external fonts  */
 @font-face {
   font-family: "Germania One";
   src: url("../src/assets/fonts/germania-one/GermaniaOne-Regular.eot");
   src: url("../src/assets/fonts/germania-one/GermaniaOne-Regular.eot?#iefix") format("embedded-opentype"), url("../src/assets/fonts/germania-one/GermaniaOne-Regular.woff2") format("woff2"), url("../src/assets/fonts/germania-one/GermaniaOne-Regular.woff") format("woff"), url("../src/assets/fonts/germania-one/GermaniaOne-Regular.ttf") format("truetype"), url("../src/assets/fonts/germania-one/GermaniaOne-Regular.svg#Germania One") format("svg");
   font-display: swap;
 }
-/**
-* This is a variable font
-* You can controll variable axes as shown below:
-* font-variation-settings: 'wght' 900.0;
-*
-* available axes:
-
-* 'wght' (range from 300.0 to 900.0)
-
-*/
 @font-face {
   font-family: "Satoshi-Variable";
   src: url("../src/assets/fonts/satoshi/Satoshi-Variable.woff2") format("woff2"), url("../src/assets/fonts/satoshi/Satoshi-Variable.woff") format("woff"), url("../src/assets/fonts/satoshi/Satoshi-Variable.ttf") format("truetype");
@@ -22,16 +12,6 @@
   font-display: swap;
   font-style: normal;
 }
-/**
-* This is a variable font
-* You can controll variable axes as shown below:
-* font-variation-settings: 'wght' 900.0;
-*
-* available axes:
-
-* 'wght' (range from 300.0 to 900.0)
-
-*/
 @font-face {
   font-family: "Satoshi-VariableItalic";
   src: url("../src/assets/fonts/satoshi/Satoshi-VariableItalic.woff2") format("woff2"), url("../src/assets/fonts/satoshi/Satoshi-VariableItalic.woff") format("woff"), url("../src/assets/fonts/satoshi/Satoshi-VariableItalic.ttf") format("truetype");
@@ -109,47 +89,36 @@
   font-display: swap;
   font-style: italic;
 }
-/*  Fin de fuentes externas  */
+/*  End external fonts  */
 :root {
   scroll-behavior: smooth;
-  /*  Medidas  */
+  /*  Measures  */
   --medida-raiz: 62.5%;
   --swiper-navigation-size: 20px;
-  /*  Fin de Medidas  */
-  /* Colores */
-  --color-blanco: #ffffff;
-  --color-gris-opacidad: hsla(0, 0%, 0%, 0.5);
-  --color-gris-opacidad-15: hsla(0, 0%, 0%, 0.15);
-  --color-gris-medio: hsla(0, 0%, 73%, 1);
-  --color-gris-bajo: hsla(0, 0%, 96%, 1);
-  --color-negro: #000000;
-  --color-rojo-coorporativo: #ff0024;
-  --color-rojo: #ff0000;
-  --color-violeta: #a402b3;
-  --color-violeta-medio: #7c0087;
-  --color-bordo: #7b0325;
-  --color-bordo-medio: #d00202;
-  --color-amarillo: #fbb900;
-  --color-amarillo-medio: #e3a72b;
-  --color-amarillo-opacidad: hsla(44, 100%, 49%, 0.3);
-  --color-transparente: hsla(360, 100%, 100%, 0);
-  --color-fucsia: #f101ff;
-  --color-azul: #0076fb;
-  --color-azul-fuerte: #0029fb;
-  --color-verde-check: #00CB00;
-  --color-rojo-error: #F90000;
-  --color-amarillo-star:#ffec51;
-  /* Fin de Colores */
-  /*  Fuentes  */
-  --fuente-germania-one: Germania One;
-  --fuente-ombudsman-stencil: Ombudsman Stencil;
-  --fuente-roboto-regular: Roboto Regular;
-  --fuente-roboto-medium: Roboto Medium;
-  --fuente-roboto-bold: Roboto Bold;
-  --fuente-roboto-light: Roboto Light;
-  --fuente-roboto-condensed-regular: Roboto Condensed Regular;
-  --fuente-roboto-condensed-bold: Roboto Condensed Bold;
-  /*  Fin de Fuentes  */
+  /*  End measures  */
+  /* Colours */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-black-85: #00000085;
+  --color-red: #FD3C3C;
+  --color-grey:#ACADAE;
+  --color-beige: #F2F0EC;
+  --color-tranparent: transparent;
+  /* End Colours */
+  /*  Fonts  */
+  --font-germania-one: Germania One;
+  --font-satoshi-variable-italic: Satoshi-VariableItalic;
+  --font-satoshi-light: Satoshi-Light;
+  --font-satoshi-light-italic: Satoshi-LightItalic;
+  --font-satoshi-regular: Satoshi-Regular;
+  --font-satoshi-italic: Satoshi-Italic;
+  --font-satoshi-medium: Satoshi-Medium;
+  --font-satoshi-medium-italic: Satoshi-MediumItalic;
+  --font-satoshi-bold: Satoshi-Bold;
+  --font-satoshi-bold-italic: Satoshi-BoldItalic;
+  --font-satoshi-black: Satoshi-Black;
+  --font-satoshi-black-italic: Satoshi-BlackItalic;
+  /*  End fonts  */
 }
 
 /* 2 */
@@ -1110,17 +1079,24 @@ footer .terminos-y-condiciones .modal-body {
  * Inicio de index.html
  *
 */
+.holy-souce nav.background-nav {
+  background-color: var(--color-transparent);
+  transition: all 1s ease;
+}
+.holy-souce nav.color-nav {
+  background-color: var(--color-black-85);
+}
 .holy-souce nav.navbar.navbar-expand-lg.navbar-light {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .holy-souce nav.navbar.navbar-expand-lg.navbar-light .container .navbar-brand {
   font-size: 1.5625em;
   /* 25/16 */
 }
 .holy-souce nav.navbar.navbar-expand-lg.navbar-light .container a {
-  font-family: var(--fuente-germania-one);
-  color: var(--color-blanco);
+  font-family: var(--font-germania-one);
+  color: var(--color-white);
   margin: 10px;
 }
 .holy-souce .holy-souce-hero {
@@ -1139,8 +1115,8 @@ footer .terminos-y-condiciones .modal-body {
   z-index: 1;
 }
 .holy-souce .holy-souce-hero .holy-souce-hero-title h1, .holy-souce .holy-souce-hero .holy-souce-hero-title h2, .holy-souce .holy-souce-hero .holy-souce-hero-title h3 {
-  font-family: var(--fuente-germania-one);
-  color: var(--color-blanco);
+  font-family: var(--font-germania-one);
+  color: var(--color-white);
   font-size: 115px;
   text-align: center;
   letter-spacing: 3px;
@@ -1174,14 +1150,115 @@ footer .terminos-y-condiciones .modal-body {
   width: 25em;
 }
 .holy-souce .holy-souce-hero .holy-souce-hero-producto .holy-souce-hero-btn {
-  border: 1px solid var(--color-blanco);
+  border: 1px solid var(--color-white);
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 8em;
-  color: var(--color-blanco);
+  color: var(--color-white);
   padding: 10px;
+}
+.holy-souce .holy-souce-section {
+  margin: 56px auto;
+  font-family: var(--font-germania-one);
+}
+.holy-souce .holy-souce-section .holy-souce-section-heading-title p {
+  font-family: var(--font-satoshi-regular);
+  text-transform: uppercase;
+  color: var(--color-grey);
+  font-size: 0.75em;
+  /* 12/16 */
+}
+.holy-souce .holy-souce-section .holy-souce-section-heading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.holy-souce .holy-souce-section .holy-souce-section-heading .holy-souce-section-heading-title h2 {
+  font-family: var(--font-germania-one);
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 1.3;
+}
+.holy-souce .holy-souce-section .holy-souce-section-heading .holy-souce-section-heading-title h2 span {
+  color: var(--color-red);
+}
+.holy-souce .holy-souce-section .holy-souce-section-heading .holy-souce-section-heading-link p {
+  font-family: var(--font-satoshi-regular);
+  color: var(--color-black);
+}
+.holy-souce .holy-souce-section .holy-souce-section-product {
+  background-color: var(--color-beige);
+  width: 80%;
+  margin: auto;
+  margin-top: 150px;
+  height: 490px;
+}
+.holy-souce .holy-souce-section .holy-souce-section-product .product-content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+  bottom: 120px;
+}
+.holy-souce .holy-souce-section .holy-souce-section-product .holy-souce-section-product-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.holy-souce .holy-souce-section .holy-souce-section-product .holy-souce-section-product-image .product-image {
+  margin-bottom: 30px;
+}
+.holy-souce .holy-souce-section .holy-souce-section-product .holy-souce-section-product-image .product-image img {
+  width: 8.5em;
+}
+.holy-souce .holy-souce-section .holy-souce-section-product .holy-souce-section-product-image .product-image-preview img {
+  width: 5em;
+}
+.holy-souce .holy-souce-section .holy-souce-section-product .holy-souce-section-product-description {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
+  grid-gap: 30px;
+  bottom: 0;
+  margin-top: 130px;
+}
+.holy-souce .holy-souce-section .holy-souce-section-product .holy-souce-section-product-description .product-description-min-title p {
+  font-family: var(--font-satoshi-regular);
+  color: var(--color-grey);
+}
+.holy-souce .holy-souce-section .holy-souce-section-product .holy-souce-section-product-description .product-description-title h3 {
+  font-family: var(--font-germania-one);
+  font-size: 50px;
+  line-height: 1;
+}
+.holy-souce .holy-souce-section .holy-souce-section-product .holy-souce-section-product-description .product-description-title h3 span {
+  color: var(--color-red);
+}
+.holy-souce .holy-souce-section .holy-souce-section-product .holy-souce-section-product-description .product-description p {
+  font-family: var(--font-satoshi-regular);
+  font-size: 19px;
+  line-height: 1.2;
+  color: var(--color-grey);
+}
+.holy-souce .holy-souce-section .holy-souce-section-product .holy-souce-section-product-description .holy-souce-section-product-button {
+  background-color: red;
+  width: 10em;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.holy-souce .holy-souce-section .holy-souce-section-product .holy-souce-section-product-description .holy-souce-section-product-button p {
+  font-family: var(--font-germania-one);
+  color: var(--color-white);
 }
 
 /*

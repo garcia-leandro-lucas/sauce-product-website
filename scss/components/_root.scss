@@ -1,4 +1,4 @@
-/*  Inicio de fuentes externas  */
+/*  Starting external fonts  */
 @font-face {
     font-family: 'Germania One';
     src: url('../src/assets/fonts/germania-one/GermaniaOne-Regular.eot');
@@ -11,17 +11,6 @@
     font-display: swap;
 }
 
-/**
-* This is a variable font
-* You can controll variable axes as shown below:
-* font-variation-settings: 'wght' 900.0;
-*
-* available axes:
-
-* 'wght' (range from 300.0 to 900.0)
-
-*/
-
 @font-face {
   font-family: 'Satoshi-Variable';
   src: url('../src/assets/fonts/satoshi/Satoshi-Variable.woff2') format('woff2'),
@@ -31,18 +20,6 @@
        font-display: swap;
        font-style: normal;
 }
-
-
-/**
-* This is a variable font
-* You can controll variable axes as shown below:
-* font-variation-settings: 'wght' 900.0;
-*
-* available axes:
-
-* 'wght' (range from 300.0 to 900.0)
-
-*/
 
 @font-face {
   font-family: 'Satoshi-VariableItalic';
@@ -164,50 +141,39 @@
        font-style: italic;
 }
 
-/*  Fin de fuentes externas  */
+/*  End external fonts  */
 
 :root {
     scroll-behavior: smooth;
-    /*  Medidas  */
+    /*  Measures  */
     --medida-raiz: 62.5%;
     --swiper-navigation-size: 20px;
-    /*  Fin de Medidas  */
+    /*  End measures  */
 
-    /* Colores */
-    --color-blanco: #ffffff;
-    --color-gris-opacidad: hsla(0, 0%, 0%, 0.5);
-    --color-gris-opacidad-15: hsla(0, 0%, 0%, 0.15);
-    --color-gris-medio: hsla(0, 0%, 73%, 1);
-    --color-gris-bajo: hsla(0, 0%, 96%, 1);
-    --color-negro: #000000;
-    --color-rojo-coorporativo: #ff0024;
-    --color-rojo: #ff0000;
-    --color-violeta: #a402b3;
-    --color-violeta-medio: #7c0087;
-    --color-bordo: #7b0325;
-    --color-bordo-medio: #d00202;
-    --color-amarillo: #fbb900;
-    --color-amarillo-medio: #e3a72b;
-    --color-amarillo-opacidad: hsla(44, 100%, 49%, 0.3);
-    --color-transparente: hsla(360, 100%, 100%, 0);
-    --color-fucsia: #f101ff;
-    --color-azul: #0076fb;
-    --color-azul-fuerte: #0029fb;
-    --color-verde-check: #00CB00;
-    --color-rojo-error: #F90000;
-    --color-amarillo-star:#ffec51;
-    /* Fin de Colores */
+    /* Colours */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-black-85: #00000085;
+    --color-red: #FD3C3C;
+    --color-grey:#ACADAE;
+    --color-beige: #F2F0EC;
+    --color-tranparent: transparent;
+    /* End Colours */
 
-    /*  Fuentes  */
-    --fuente-germania-one: Germania One;
-    --fuente-ombudsman-stencil: Ombudsman Stencil;
-    --fuente-roboto-regular: Roboto Regular;
-    --fuente-roboto-medium: Roboto Medium;
-    --fuente-roboto-bold: Roboto Bold;
-    --fuente-roboto-light: Roboto Light;
-    --fuente-roboto-condensed-regular: Roboto Condensed Regular;
-    --fuente-roboto-condensed-bold: Roboto Condensed Bold;
-    /*  Fin de Fuentes  */
+    /*  Fonts  */
+    --font-germania-one: Germania One;
+    --font-satoshi-variable-italic: Satoshi-VariableItalic;
+    --font-satoshi-light: Satoshi-Light;
+    --font-satoshi-light-italic: Satoshi-LightItalic;
+    --font-satoshi-regular: Satoshi-Regular;
+    --font-satoshi-italic: Satoshi-Italic;
+    --font-satoshi-medium: Satoshi-Medium;
+    --font-satoshi-medium-italic: Satoshi-MediumItalic;
+    --font-satoshi-bold: Satoshi-Bold;
+    --font-satoshi-bold-italic: Satoshi-BoldItalic;
+    --font-satoshi-black: Satoshi-Black;
+    --font-satoshi-black-italic: Satoshi-BlackItalic;
+    /*  End fonts  */
 }
 
 $grid-breakpoints: (

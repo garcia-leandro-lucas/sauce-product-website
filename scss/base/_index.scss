@@ -4,9 +4,19 @@
 */
 
 .holy-souce {
+
+   nav.background-nav { 
+        background-color:var(--color-transparent);
+        transition: all 1s ease;
+   }
+
+   nav.color-nav {
+        background-color:var(--color-black-85);
+   }
+
    nav.navbar.navbar-expand-lg.navbar-light {
-    margin-top: 20px;
-    margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
 
         .container {
 
@@ -15,8 +25,8 @@
             }
 
             a {
-                font-family: var(--fuente-germania-one);
-                color: var(--color-blanco);
+                font-family: var(--font-germania-one);
+                color: var(--color-white);
                 margin: 10px;    
             }
                 
@@ -41,8 +51,8 @@
             z-index: 1;
 
             h1, h2, h3 {
-                font-family: var(--fuente-germania-one);
-                color: var(--color-blanco);
+                font-family: var(--font-germania-one);
+                color: var(--color-white);
                 font-size: 115px;
                 text-align: center;
                 letter-spacing: 3px;
@@ -85,16 +95,163 @@
             }
 
             .holy-souce-hero-btn {
-                border: 1px solid var(--color-blanco);
+                border: 1px solid var(--color-white);
                 border-radius: 4px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 8em;
-                color: var(--color-blanco);
+                color: var(--color-white);
                 padding:10px
             }
         }
+    }
+
+    .holy-souce-section {
+        margin: 56px auto;
+
+        .holy-souce-section-heading-title {
+
+            p {
+                font-family: var(--font-satoshi-regular);
+                text-transform: uppercase;
+                color: var(--color-grey);
+                font-size: 0.75em;     /* 12/16 */
+            }
+            
+        }
+
+        .holy-souce-section-heading {
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            .holy-souce-section-heading-title {
+                h2 {
+                    font-family: var(--font-germania-one);
+                    text-transform: uppercase;
+                    font-size: 35px;
+                    line-height: 1.3;
+
+                    span {
+                        color: var(--color-red);
+                    }
+                }
+            }
+
+            .holy-souce-section-heading-link {
+                p {
+                    font-family: var(--font-satoshi-regular);
+                    color: var(--color-black);
+                }
+            }
+        }
+
+        .holy-souce-section-product {
+            background-color: var(--color-beige);
+            width: 80%;
+            margin: auto;
+            margin-top: 150px;
+            height: 490px;
+            
+            .product-content {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                margin: auto;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                position: relative;
+                bottom: 120px;
+            
+            }
+            
+
+            .holy-souce-section-product-image {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;        
+
+                .product-image {
+                    margin-bottom: 30px;
+
+                    img {
+                        width: 8.5em;           
+                    }
+                }
+
+                .product-image-preview {
+                    img {
+                        width: 5em;            
+                    }
+                }
+            }
+
+            .holy-souce-section-product-description {
+
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 4fr;
+                grid-gap: 30px;
+                bottom: 0;
+                margin-top: 130px;
+
+                .product-description-min-title {
+
+                    p {
+                        font-family: var(--font-satoshi-regular);
+                        color: var(--color-grey);
+                    }
+                }
+
+                .product-description-title {
+
+                    h3 {
+                    font-family: var(--font-germania-one);
+                    font-size: 50px;
+                    line-height: 1;
+
+                        span {
+                            color: var(--color-red);
+                        }
+                    }
+                }
+
+                .product-description {
+                    p {
+                        font-family: var(--font-satoshi-regular);
+                        font-size: 19px;
+                        line-height: 1.2;
+                        color: var(--color-grey);
+                    }
+                }
+
+                .holy-souce-section-product-button {
+                    background-color: red;
+                    width: 10em;
+                    padding: 10px;
+                    border-radius: 4px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    display: flex;
+                    justify-content: center;
+
+                    p {
+                        font-family: var(--font-germania-one);
+                        color: var(--color-white);      
+                    }
+                }
+            }
+        }
+
+        
+
+
+
+
+
+        font-family: var(--font-germania-one);
     }
 }
 
