@@ -108,7 +108,7 @@
     }
 
     .holy-souce-section {
-        margin: 56px auto;
+        margin: 100px auto;
 
         .holy-souce-section-heading-title {
 
@@ -245,13 +245,116 @@
             }
         }
 
-        
+        .holy-souce-section-process {
+                width: 80%;
+                margin: auto;
+                display: flex;
+                align-items: center;
 
+                .holy-souce-section-process-background {
+                    background-color: var(--color-beige);
+                    height: 500px;
+                    width: 641px;
+                    position: absolute;
+                    left: 0;
+                    z-index: -1;
+                }
 
+            .holy-souce-section-process-image {
+                display: flex;
+                justify-content: start;
 
+                img {
+                    width: 25em;
+                }
+            }
 
+            .holy-souce-section-process-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: auto;
 
-        font-family: var(--font-germania-one);
+                .holy-souce-section-process-item-title {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 30px;
+                    border-bottom: 1px solid var(--color-grey);
+                    padding-bottom: 30px;
+                    align-items: center;
+
+                    .item-title-number-text {
+                        display: flex;
+                        align-items: center;
+
+                            .item-title-number {
+                                p {
+                                    font-family: var(--font-satoshi-medium);
+                                    color: var(--color-grey);
+                                    font-size: 23px;
+                                    margin-right: 30px;
+                                }
+                            }
+
+                            .item-title-text {
+                                p {
+                                    font-family: var(--font-satoshi-medium);
+                                    color: var(--color-black);
+                                    font-size: 25px;
+                                }
+                            }
+                    }
+
+                    .item-title-icon {
+                        i {
+                            color: var(--color-red);
+                        }
+                    }
+                }
+            }
+        }
+
+        .holy-souce-section-heading-title-video {
+            h2 {
+                font-family: var(--font-germania-one);
+                font-size: 50px;
+                line-height: 1;
+                text-align: center;
+
+                span {
+                    color: var(--color-red);
+                }
+            }
+        }
+
+        .holy-souce-section-video {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .holy-souce-section-all-recipes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin: auto;
+
+            .recipes {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: auto;
+
+                .recipes-image {
+                    img {
+                        width: 15em;
+                    }
+                }
+            }
+        }
     }
 }
 
