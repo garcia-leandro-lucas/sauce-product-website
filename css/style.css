@@ -1287,13 +1287,17 @@ footer .terminos-y-condiciones .modal-body {
   flex-direction: column;
   justify-content: center;
   margin: auto;
+  border-bottom: 1px solid var(--color-grey);
+  padding-bottom: 10px;
+}
+.holy-souce .holy-souce-section .holy-souce-section-process .holy-souce-section-process-item #descriptionItem01, .holy-souce .holy-souce-section .holy-souce-section-process .holy-souce-section-process-item #descriptionItem02, .holy-souce .holy-souce-section .holy-souce-section-process .holy-souce-section-process-item #descriptionItem03, .holy-souce .holy-souce-section .holy-souce-section-process .holy-souce-section-process-item #descriptionItem04 {
+  display: none;
 }
 .holy-souce .holy-souce-section .holy-souce-section-process .holy-souce-section-process-item .holy-souce-section-process-item-title {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
-  border-bottom: 1px solid var(--color-grey);
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   align-items: center;
 }
 .holy-souce .holy-souce-section .holy-souce-section-process .holy-souce-section-process-item .holy-souce-section-process-item-title .item-title-number-text {
