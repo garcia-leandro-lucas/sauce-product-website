@@ -340,22 +340,157 @@
             justify-content: center;
             align-items: center;
             align-content: center;
-            margin: auto;
+            margin: 120px auto;
 
             .recipes {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 margin: auto;
+                background-color: var(--color-beige);
+                padding: 20px;
+                height: 300px;
+                border-radius:4px;
 
                 .recipes-image {
+                    position: relative;
+                    top: -60px;
+
                     img {
                         width: 15em;
+                    }
+                }
+
+                .recipe-description {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    position: relative;
+                    top: -50px;
+
+                    .recipes-title {
+                        font-family: var(--font-satoshi-bold);
+                        text-align: center;
+                        margin-bottom: 10px;
+
+                        p {
+                            font-size: 22px;
+                            line-height: 1.2;
+                        }
+                    }
+
+                    .recipes-read-link {
+                        font-family: var(--font-satoshi-regular);
+                        text-align: center;
+                        margin-bottom: 5px;
+
+                        a {
+                            color: var(--color-black-202020);
+
+                            span {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .recipes-time-portion {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .recipe-time {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+
+                            p:first-child {
+                                font-family: var(--font-satoshi-regular);
+                                color: var(--color-grey);
+                            }
+
+                            p:nth-child(2) {
+                                font-family: var(--font-satoshi-bold);
+                                color: var(--color-black-202020);
+                            }
+                        }
+
+                        .recipe-portion {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-end;
+
+                            p:first-child {
+                                font-family: var(--font-satoshi-regular);
+                                color: var(--color-grey);
+                            }
+
+                            p:nth-child(2) {
+                                font-family: var(--font-satoshi-bold);
+                                color: var(--color-black-202020);
+                            }
+                        }
                     }
                 }
             }
         }
     }
+
+
+    footer.footer-holy-souce {
+        background-color: var(--color-beige);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 0px;
+        justify-content: space-evenly;
+
+        .logo-holy-souce {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+
+            object {
+                width: 4em;
+            }
+
+            p {
+                font-family: var(--font-germania-one);
+                font-size: 30px;
+                color: var(--color-red);
+                margin-left: 10px;
+
+                span {
+                    color: var(--color-green);
+                }
+            }
+        }
+
+        .legal-liks {
+            width: 30%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+
+            a {
+                font-family: var(--font-germania-one);
+                color: var(--color-black-202020);
+            }
+        }
+
+        .social-networks {
+            margin: 20px auto;
+
+            i {
+                font-size: 30px;
+                margin-left: 10px;
+                margin-right: 10px;
+                color: var(--color-red);
+            }
+        }
+    }
+
 }
 
 

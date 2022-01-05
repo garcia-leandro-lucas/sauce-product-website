@@ -99,10 +99,12 @@
   /* Colours */
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-black-202020: #202020;
   --color-black-85: #00000085;
   --color-red: #FD3C3C;
   --color-grey:#ACADAE;
   --color-beige: #F2F0EC;
+  --color-green: #3CC925;
   --color-tranparent: transparent;
   /* End Colours */
   /*  Fonts  */
@@ -1333,16 +1335,128 @@ footer .terminos-y-condiciones .modal-body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: auto;
+  margin: 120px auto;
 }
 .holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
+  background-color: var(--color-beige);
+  padding: 20px;
+  height: 300px;
+  border-radius: 4px;
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipes-image {
+  position: relative;
+  top: -60px;
 }
 .holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipes-image img {
   width: 15em;
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipe-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  top: -50px;
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipe-description .recipes-title {
+  font-family: var(--font-satoshi-bold);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipe-description .recipes-title p {
+  font-size: 22px;
+  line-height: 1.2;
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipe-description .recipes-read-link {
+  font-family: var(--font-satoshi-regular);
+  text-align: center;
+  margin-bottom: 5px;
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipe-description .recipes-read-link a {
+  color: var(--color-black-202020);
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipe-description .recipes-read-link a span {
+  text-decoration: underline;
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipe-description .recipes-time-portion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipe-description .recipes-time-portion .recipe-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipe-description .recipes-time-portion .recipe-time p:first-child {
+  font-family: var(--font-satoshi-regular);
+  color: var(--color-grey);
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipe-description .recipes-time-portion .recipe-time p:nth-child(2) {
+  font-family: var(--font-satoshi-bold);
+  color: var(--color-black-202020);
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipe-description .recipes-time-portion .recipe-portion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipe-description .recipes-time-portion .recipe-portion p:first-child {
+  font-family: var(--font-satoshi-regular);
+  color: var(--color-grey);
+}
+.holy-souce .holy-souce-section .holy-souce-section-all-recipes .recipes .recipe-description .recipes-time-portion .recipe-portion p:nth-child(2) {
+  font-family: var(--font-satoshi-bold);
+  color: var(--color-black-202020);
+}
+.holy-souce footer.footer-holy-souce {
+  background-color: var(--color-beige);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 0px;
+  justify-content: space-evenly;
+}
+.holy-souce footer.footer-holy-souce .logo-holy-souce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.holy-souce footer.footer-holy-souce .logo-holy-souce object {
+  width: 4em;
+}
+.holy-souce footer.footer-holy-souce .logo-holy-souce p {
+  font-family: var(--font-germania-one);
+  font-size: 30px;
+  color: var(--color-red);
+  margin-left: 10px;
+}
+.holy-souce footer.footer-holy-souce .logo-holy-souce p span {
+  color: var(--color-green);
+}
+.holy-souce footer.footer-holy-souce .legal-liks {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.holy-souce footer.footer-holy-souce .legal-liks a {
+  font-family: var(--font-germania-one);
+  color: var(--color-black-202020);
+}
+.holy-souce footer.footer-holy-souce .social-networks {
+  margin: 20px auto;
+}
+.holy-souce footer.footer-holy-souce .social-networks i {
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: var(--color-red);
 }
 
 /*
