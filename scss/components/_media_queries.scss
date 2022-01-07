@@ -9,9 +9,131 @@
 */
 
 /* Mobile Styles */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 576px) {
 
-    
+    .holy-souce {
+        .holy-souce-hero {
+            display: flex;
+            flex-direction: column;
+
+            .holy-souce-hero-producto {
+                position:initial;
+
+                img {
+                    width: 15em;
+                    margin-top: -150px;
+                    position: relative;
+                }
+
+                .holy-souce-hero-btn {
+                    border: 1px solid var(--color-black);
+                    color: var(--color-black);
+                }
+            }
+
+            .holy-souce-hero-title {
+                display: none;
+            }
+
+            .holy-souce-hero-title-mobile {
+                display: block;
+                margin-bottom: 30px;
+            }
+        }
+
+        .holy-souce-section {
+            margin: 60px auto;
+
+            .holy-souce-section-product {
+                width: 100%;
+                margin-top: 150px;
+                height: max-content;
+
+                .product-content {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    bottom: 120px;
+
+                    .holy-souce-section-product-image {
+                        .product-image {
+                            img {
+                                width: 8.5em;
+                            }
+                        }
+                    }
+
+                    .holy-souce-section-product-description {
+                        display: grid;
+                        grid-gap: 10px;
+                    }
+                }
+            }
+
+            .holy-souce-section-product.container {
+                padding-left:0;
+                padding-right:0;
+            }
+
+            .holy-souce-section-process {
+                width: 100%;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .holy-souce-section-process-background {
+                    height: 380px;
+                    width: 100%;
+                }
+
+                .holy-souce-section-process-image {
+                    img {
+                        width: 20em;
+                    }
+                }
+            }
+
+            .holy-souce-section-video {
+                .holy-souce-section-product-video {
+                    video {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .holy-souce-section-all-recipes {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2,1fr);
+                grid-gap: 120px 10px;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                margin: 120px auto;
+                width: 100%;
+
+                .recipes {
+                    padding: 5px;
+
+                    .recipes-image {
+                        img {
+                            width: 10em;
+                        }
+                    }
+
+                    .recipe-description {
+                        .recipes-title {
+                            p {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
 
 }
 
