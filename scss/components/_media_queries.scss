@@ -75,6 +75,7 @@
                 padding-right:0;
             }
 
+            /* Section From seeds to bottles - Process */
             .holy-souce-section-process {
                 width: 100%;
                 margin: auto;
@@ -92,8 +93,29 @@
                         width: 20em;
                     }
                 }
+
+                .holy-souce-section-process-item {
+                    .process-item {
+                        .process-item-title {
+                            .item-title-number-text {
+                                .item-title-number {
+                                    p {
+                                        margin-right: 15px;
+                                    }
+                                }
+
+                                .item-title-text {
+                                    p{
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    }
             }
 
+            /* Section Watch our Authentic Process */
             .holy-souce-section-video {
                 .holy-souce-section-product-video {
                     video {
@@ -102,6 +124,7 @@
                 }
             }
 
+            /* Section simple & Tasty recipes */
             .holy-souce-section-all-recipes {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -130,6 +153,17 @@
                         }
                     }
                 }
+            }
+        }
+
+        /* Footer */
+        .footer-holy-souce {
+            padding: 10px 0px;
+
+            .legal-liks {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
             }
         }
         
