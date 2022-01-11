@@ -1514,6 +1514,9 @@ footer .terminos-y-condiciones .modal-body {
     display: block;
     margin-bottom: 30px;
   }
+  .holy-souce .holy-souce-section.container {
+    width: auto;
+  }
   .holy-souce .holy-souce-section {
     margin: 60px auto;
     /* Section From seeds to bottles - Process */
@@ -1543,18 +1546,17 @@ footer .terminos-y-condiciones .modal-body {
     padding-right: 0;
   }
   .holy-souce .holy-souce-section .holy-souce-section-process {
-    width: 100%;
+    width: auto;
     margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
   .holy-souce .holy-souce-section .holy-souce-section-process .holy-souce-section-process-background {
-    height: 380px;
-    width: 100%;
+    display: none;
   }
   .holy-souce .holy-souce-section .holy-souce-section-process .holy-souce-section-process-image img {
-    width: 20em;
+    width: 18em;
   }
   .holy-souce .holy-souce-section .holy-souce-section-process .holy-souce-section-process-item .process-item .process-item-title .item-title-number-text .item-title-number p {
     margin-right: 15px;

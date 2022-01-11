@@ -12,6 +12,7 @@
 @media only screen and (max-width: 576px) {
 
     .holy-souce {
+
         .holy-souce-hero {
             display: flex;
             flex-direction: column;
@@ -39,6 +40,10 @@
                 display: block;
                 margin-bottom: 30px;
             }
+        }
+
+        .holy-souce-section.container {
+            width: auto;
         }
 
         .holy-souce-section {
@@ -77,20 +82,19 @@
 
             /* Section From seeds to bottles - Process */
             .holy-souce-section-process {
-                width: 100%;
+                width: auto;
                 margin: auto;
                 display: flex;
                 align-items: center;
                 flex-direction: column;
 
                 .holy-souce-section-process-background {
-                    height: 380px;
-                    width: 100%;
+                    display: none;
                 }
 
                 .holy-souce-section-process-image {
                     img {
-                        width: 20em;
+                        width: 18em;
                     }
                 }
 
