@@ -1088,15 +1088,15 @@ footer .terminos-y-condiciones .modal-body {
 .holy-souce nav.color-nav {
   background-color: var(--color-black-85);
 }
-.holy-souce nav.navbar.navbar-expand-lg.navbar-light {
+.holy-souce nav.navbar.navbar-expand-lg.navbar-dark {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.holy-souce nav.navbar.navbar-expand-lg.navbar-light .container .navbar-brand {
+.holy-souce nav.navbar.navbar-expand-lg.navbar-dark .container .navbar-brand {
   font-size: 1.5625em;
   /* 25/16 */
 }
-.holy-souce nav.navbar.navbar-expand-lg.navbar-light .container a {
+.holy-souce nav.navbar.navbar-expand-lg.navbar-dark .container a {
   font-family: var(--font-germania-one);
   color: var(--color-white);
   margin: 10px;
