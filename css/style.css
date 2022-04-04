@@ -1495,7 +1495,7 @@ footer .terminos-y-condiciones .modal-body {
  * #######################
 */
 /* Mobile Styles */
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 360px) {
   .holy-souce {
     /* Footer */
   }
