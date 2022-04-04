@@ -19,7 +19,7 @@ $("#item03").click(function() {
     $("#descriptionItem02").hide();
     $("#descriptionItem03").toggle();
     $("#descriptionItem04").hide();
-    $(".arrow02").toggle();
+    $(".arrow03").toggle();
         });
 
 $("#item04").click(function() {
@@ -27,5 +27,5 @@ $("#item04").click(function() {
     $("#descriptionItem02").hide();
     $("#descriptionItem03").hide();
     $("#descriptionItem04").toggle();
-    $(".arrow03").toggle();
+    $(".arrow04").toggle();
         });

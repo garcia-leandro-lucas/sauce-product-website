@@ -9,7 +9,7 @@
 */
 
 /* Mobile Styles */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 460px) {
 
     .holy-souce {
         .holy-souce-hero {
@@ -28,6 +28,12 @@
                 .holy-souce-hero-btn {
                     border: 1px solid var(--color-black);
                     color: var(--color-black);
+
+                     &:hover {
+                        background-color: var(--color-black-85);
+                        color: #ffffff;
+                        transition: all 0.3s;
+                    }
                 }
             }
 
@@ -38,6 +44,16 @@
             .holy-souce-hero-title-mobile {
                 display: block;
                 margin-bottom: 30px;
+                .hero-title-higher {
+                    h1 {
+                        font-family: var(--font-germania-one);
+                        color: var(--color-black);
+                        font-size: 50px;
+                        text-align: center;
+                        letter-spacing: 3px;
+                        line-height: 1;
+                    }
+                }
             }
         }
 
@@ -70,6 +86,7 @@
                     .holy-souce-section-product-description {
                         display: grid;
                         grid-gap: 10px;
+                        margin-top: 50px;
                     }
                 }
             }
@@ -93,11 +110,13 @@
 
                 .holy-souce-section-process-image {
                     img {
-                        width: 18em;
+                        width: 100%;
                     }
                 }
 
                 .holy-souce-section-process-item {
+                    width: 100%;
+
                     .process-item {
                         .process-item-title {
                             .item-title-number-text {
@@ -175,10 +194,553 @@
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 361px) and (max-width: 1060px) {
+@media only screen and (min-width: 361px) and (max-width: 768px) {
 
-    
+    .holy-souce {
+        .holy-souce-hero {
+            display: flex;
+            flex-direction: column;
+
+            .holy-souce-hero-producto {
+                position:initial;
+
+                img {
+                    width: 15em;
+                    margin-top: -150px;
+                    position: relative;
+                }
+
+                .holy-souce-hero-btn {
+                    border: 1px solid var(--color-black);
+                    color: var(--color-black);
+
+                     &:hover {
+                        background-color: var(--color-black-85);
+                        color: #ffffff;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+
+            .holy-souce-hero-title {
+                display: none;
+            }
+
+            .holy-souce-hero-title-mobile {
+                display: block;
+                margin-bottom: 30px;
+                .hero-title-higher {
+                    h1 {
+                        font-family: var(--font-germania-one);
+                        color: var(--color-black);
+                        font-size: 50px;
+                        text-align: center;
+                        letter-spacing: 3px;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+
+        .holy-souce-section.container {
+            width: auto;
+        }
+
+        .holy-souce-section {
+            margin: 60px auto;
+
+            .holy-souce-section-product {
+                width: 100%;
+                margin-top: 150px;
+                height: max-content;
+
+                .product-content {
+                    display: flex;
+                    width: 100%;
+                    bottom: 120px;
+
+                    .holy-souce-section-product-image {
+                        .product-image {
+                            img {
+                                width: 8.5em;
+                            }
+                        }
+                    }
+
+                    .holy-souce-section-product-description {
+                        display: grid;
+                        grid-gap: 10px;
+                        //margin-top: 50px;
+                    }
+                }
+            }
+
+            .holy-souce-section-product.container {
+                padding-left:0;
+                padding-right:0;
+            }
+
+            /* Section From seeds to bottles - Process */
+            .holy-souce-section-process {
+                width: auto;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .holy-souce-section-process-background {
+                    display: none;
+                }
+
+                .holy-souce-section-process-image {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .holy-souce-section-process-item {
+                    width: 100%;
+
+                    .process-item {
+                        .process-item-title {
+                            .item-title-number-text {
+                                .item-title-number {
+                                    p {
+                                        margin-right: 15px;
+                                    }
+                                }
+
+                                .item-title-text {
+                                    p{
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    }
+            }
+
+            /* Section Watch our Authentic Process */
+            .holy-souce-section-video {
+                .holy-souce-section-product-video {
+                    video {
+                        width: 100%;
+                    }
+                }
+            }
+
+            /* Section simple & Tasty recipes */
+            .holy-souce-section-all-recipes {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2,1fr);
+                grid-gap: 120px 10px;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                margin: 120px auto;
+                width: 100%;
+
+                .recipes {
+                    padding: 5px;
+
+                    .recipes-image {
+                        img {
+                            width: 10em;
+                        }
+                    }
+
+                    .recipe-description {
+                        .recipes-title {
+                            p {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Footer */
+        .footer-holy-souce {
+            padding: 10px 0px;
+
+            .legal-liks {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+    }
+
 }
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .holy-souce {
+        .holy-souce-hero {
+            display: flex;
+            flex-direction: column;
+
+            .holy-souce-hero-producto {
+                position:initial;
+
+                img {
+                    width: 15em;
+                    margin-top: -350px;
+                    position: relative;
+                }
+
+                .holy-souce-hero-btn {
+                    border: 1px solid var(--color-black);
+                    color: var(--color-black);
+
+                     &:hover {
+                        background-color: var(--color-black-85);
+                        color: #ffffff;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+
+            .holy-souce-hero-title {
+                display: none;
+            }
+
+            .holy-souce-hero-title-mobile {
+                display: block;
+                margin-bottom: 30px;
+                .hero-title-higher {
+                    h1 {
+                        font-family: var(--font-germania-one);
+                        color: var(--color-black);
+                        font-size: 50px;
+                        text-align: center;
+                        letter-spacing: 3px;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+
+        .holy-souce-section.container {
+            width: auto;
+        }
+
+        .holy-souce-section {
+            margin: 60px auto;
+
+            .holy-souce-section-product {
+                width: 100%;
+                margin-top: 150px;
+
+                .product-content {
+                    display: flex;
+                    width: 100%;
+                    bottom: 120px;
+
+                    .holy-souce-section-product-image {
+                        .product-image {
+                            img {
+                                width: 8.5em;
+                            }
+                        }
+                    }
+
+                    .holy-souce-section-product-description {
+                        display: grid;
+                        grid-gap: 10px;
+                        //margin-top: 50px;
+                    }
+                }
+            }
+
+            .holy-souce-section-product.container {
+                padding-left:0;
+                padding-right:0;
+            }
+
+            /* Section From seeds to bottles - Process */
+            .holy-souce-section-process {
+                width: auto;
+                margin: auto;
+                display: flex;
+                align-items: center;
+
+                .holy-souce-section-process-background {
+                    display: none;
+                }
+
+                .holy-souce-section-process-image {
+                    img {
+                        width: 90%;
+                    }
+                }
+
+                .holy-souce-section-process-item {
+                    width: 100%;
+
+                    .process-item {
+                        .process-item-title {
+                            .item-title-number-text {
+                                .item-title-number {
+                                    p {
+                                        margin-right: 15px;
+                                    }
+                                }
+
+                                .item-title-text {
+                                    p{
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    }
+            }
+
+            /* Section Watch our Authentic Process */
+            .holy-souce-section-video {
+                .holy-souce-section-product-video {
+                    video {
+                        width: 100%;
+                    }
+                }
+            }
+
+            /* Section simple & Tasty recipes */
+            .holy-souce-section-all-recipes {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(1,1fr);
+                grid-gap: 120px 10px;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                margin: 100px auto;
+                width: 100%;
+
+                .recipes {
+                    padding: 15px;
+
+                    .recipes-image {
+                        img {
+                            width: 10em;
+                        }
+                    }
+
+                    .recipe-description {
+                        .recipes-title {
+                            p {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Footer */
+        .footer-holy-souce {
+            padding: 10px 0px;
+
+            .legal-liks {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+    }
+
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1400px) {
+
+    .holy-souce {
+        .holy-souce-hero {
+            display: flex;
+            flex-direction: column;
+
+            .holy-souce-hero-producto {
+                position:initial;
+
+                img {
+                    width: 15em;
+                    margin-top: -350px;
+                    position: relative;
+                }
+
+                .holy-souce-hero-btn {
+                    border: 1px solid var(--color-black);
+                    color: var(--color-black);
+
+                     &:hover {
+                        background-color: var(--color-black-85);
+                        color: #ffffff;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+
+            .holy-souce-hero-title {
+                display: none;
+            }
+
+            .holy-souce-hero-title-mobile {
+                display: block;
+                margin-bottom: 30px;
+                .hero-title-higher {
+                    h1 {
+                        font-family: var(--font-germania-one);
+                        color: var(--color-black);
+                        font-size: 50px;
+                        text-align: center;
+                        letter-spacing: 3px;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+
+        .holy-souce-section.container {
+            width: auto;
+        }
+
+        .holy-souce-section {
+            margin: 60px auto;
+
+            .holy-souce-section-product {
+                width: 100%;
+                margin-top: 150px;
+
+                .product-content {
+                    display: flex;
+                    width: 100%;
+                    bottom: 120px;
+
+                    .holy-souce-section-product-image {
+                        .product-image {
+                            img {
+                                width: 8.5em;
+                            }
+                        }
+                    }
+
+                    .holy-souce-section-product-description {
+                        display: grid;
+                        grid-gap: 10px;
+                        //margin-top: 50px;
+                    }
+                }
+            }
+
+            .holy-souce-section-product.container {
+                padding-left:0;
+                padding-right:0;
+            }
+
+            /* Section From seeds to bottles - Process */
+            .holy-souce-section-process {
+                width: auto;
+                margin: auto;
+                display: flex;
+                align-items: center;
+
+                .holy-souce-section-process-background {
+                    display: none;
+                }
+
+                .holy-souce-section-process-image {
+                    img {
+                        width: 90%;
+                    }
+                }
+
+                .holy-souce-section-process-item {
+                    width: 100%;
+
+                    .process-item {
+                        .process-item-title {
+                            .item-title-number-text {
+                                .item-title-number {
+                                    p {
+                                        margin-right: 15px;
+                                    }
+                                }
+
+                                .item-title-text {
+                                    p{
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    }
+            }
+
+            /* Section Watch our Authentic Process */
+            .holy-souce-section-video {
+                .holy-souce-section-product-video {
+                    video {
+                        width: 100%;
+                    }
+                }
+            }
+
+            /* Section simple & Tasty recipes */
+            .holy-souce-section-all-recipes {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(1,1fr);
+                grid-gap: 120px 10px;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                margin: 100px auto;
+                width: 100%;
+
+                .recipes {
+                    padding: 15px;
+
+                    .recipes-image {
+                        img {
+                            width: 10em;
+                        }
+                    }
+
+                    .recipe-description {
+                        .recipes-title {
+                            p {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Footer */
+        .footer-holy-souce {
+            padding: 10px 0px;
+
+            .legal-liks {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+    }
+
+}
+
+
 
 /* Desktop Styles */
 @media only screen and (min-width: 1061px) {
